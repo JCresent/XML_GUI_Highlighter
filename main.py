@@ -7,6 +7,12 @@ def main():
         print("Usage: python main.py <path_to_dir>")
         exit(1)
 
+    pathDir = sys.argv[1]
+    filenames = []
+    for file in os.listdir(pathDir):
+        if file.endswith(".xml"):
+            filenames.append(file)
+    #print(filenames)
     
 
 
